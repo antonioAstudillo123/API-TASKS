@@ -1,4 +1,7 @@
 <?php
 
-use Illuminate\Http\Request;
+use App\Http\Controllers\Tasks\TaskController;
 use Illuminate\Support\Facades\Route;
+
+
+Route::post('/tasks/create', [TaskController::class, 'store']);

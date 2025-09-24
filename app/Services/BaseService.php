@@ -23,8 +23,7 @@ class BaseService
      *
      * Este método no ejecuta la consulta, con el objetivo
      * de mantener la flexibilidad en capas superiores como controladores o servicios
-     * específicos, donde se pueden aplicar filtros adicionales, ordenamientos,
-     * paginación u otras transformaciones según el caso de uso. 
+     * específicos, donde se pueden aplicar filtros adicionales, ordenamientos o paginación. 
      * 
      * @param array $relations Relaciones Eloquent que se desean cargar
      * @return \Illuminate\Database\Eloquent\Builder
@@ -34,5 +33,16 @@ class BaseService
     public function queryWith(array $relations = []): Builder
     {
         return $this->model->query()->with($relations);
+    }
+
+
+
+
+    /**
+     * Creammos un recurso de un modelo especifico 
+     */
+    public function create(array $data): Model
+    {
+        return $this->model->create($data);
     }
 }
