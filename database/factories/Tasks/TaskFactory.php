@@ -14,7 +14,7 @@ class TaskFactory extends Factory
 {
     /**
      * Definimos el factory para el modelo de tareas. En este caso, establecemos la fecha de inicio como el día actual, 
-     * y la fecha definalización como siete días después de la fecha de inicio.
+     * y la fecha de finalización como siete días después de la fecha de inicio.
      *
      * @return array<string, mixed>
      */
