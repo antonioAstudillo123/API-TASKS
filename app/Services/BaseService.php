@@ -45,4 +45,16 @@ class BaseService
     {
         return $this->model->create($data);
     }
+
+
+
+
+    /**
+     * Retornamos una query general 
+     */
+
+    public function query()
+    {
+        return $this->model->query();
+    }
 }
