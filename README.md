@@ -26,9 +26,9 @@ Este proyecto es una API construida con **Laravel**, enfocada en la gestión de 
 
 ---
 
-## 🔐 Validaciones
+## Validaciones
 
-### ✅ Tarea (`POST /tasks/create`)
+### Tarea (`POST /tasks/create`)
 
 -   `name`: requerido
 -   `description`: requerido
@@ -41,7 +41,7 @@ Validaciones personalizadas:
 
 ---
 
-## 📤 Ejemplo de Request – Crear tarea
+## Ejemplo de Request – Crear tarea
 
 ```json
 POST /api/tasks/create
@@ -66,3 +66,72 @@ POST /api/tasks/create
   }
 }
 ```
+
+## Ejemplo de Response – Listado de Compañías
+
+```json
+GET /api/companies
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Compañía X",
+      "tasks": [
+        {
+          "id": 1,
+          "name": "Tarea 1",
+          "user": "Juan Pérez",
+          "is_completed": false,
+          "start_at": "2025-09-24",
+          "expired_at": "2025-10-01"
+        }
+      ]
+    }
+  ]
+}
+```
+
+## Capturas de pantalla
+
+### 1. Vista de respuesta al crear una tarea
+
+![Respuesta al crear tarea](screenshots/crear-task-post.png)
+
+---
+
+### 2. Vista de listado de compañías con tareas
+
+![Listado de compañías](screenshots/listar-companies.png)
+
+## Cómo correr el proyecto
+
+# Clonar el repositorio
+
+git clone https://github.com/antonioAstudillo123/API-TASKS.git
+
+# Instalar dependencias
+
+composer install
+
+# Copiar archivo .env
+
+cp .env.example .env
+
+# Generar APP_KEY
+
+php artisan key:generate
+
+# Configurar la base de datos en .env
+
+# Ejecutar migraciones y seeders
+
+php artisan migrate --seed
+
+# Levantar el servidor
+
+php artisan serve
+
+## Autor
+
+Antonio Astudillo
+Desarrollador Backend | Laravel & PHP
