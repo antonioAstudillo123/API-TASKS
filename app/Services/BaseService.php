@@ -32,7 +32,7 @@ class BaseService
 
     public function queryWith(array $relations = []): Builder
     {
-        return $this->model->query()->with($relations);
+        return $this->query()->with($relations);
     }
 
 

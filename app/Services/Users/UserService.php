@@ -16,8 +16,8 @@ class UserService extends BaseService
     }
 
     /**
-     *  Este metodo nos permite comprobar si el usuario en cuestion, tiene mas o igual de 5 tareas sin completar asignadas
-     * Si el valor es true, significa que a ese usuario, se le pueden asignar mas tareas, pues el total de tareas asignadas
+     *  Este metodo nos permite comprobar si el usuario en cuestion, tiene menos de 5 tareas asignadas
+     * Si el valor es true, significa que a ese usuario, se le pueden asignar más tareas, pues el total de tareas asignadas
      * que tiene hasta este momento, es menor a 5(limite superior de tareas asignadas a un usuario)
      *
      * @param integer $id -> es el id del usuario que queremos validar
