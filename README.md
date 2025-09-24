@@ -18,7 +18,7 @@ Este proyecto es una API construida con **Laravel**, enfocada en la gestión de 
 
 ## Stack y herramientas
 
--   PHP 8.2
+-   PHP 8.1
 -   Laravel 10.x
 -   Faker
 -   Postman (para pruebas)
