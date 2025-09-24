@@ -17,9 +17,9 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->string('name');
             $table->text('description');
-            $table->boolean('is_completed');
-            $table->dateTime('start_at');
-            $table->dateTime('expired_at');
+            $table->boolean('is_completed')->default(false);
+            $table->dateTime('start_at')->nullable();
+            $table->dateTime('expired_at')->nullable();
 
 
             $table->foreign('company_id')->references('id')->on('companies');
