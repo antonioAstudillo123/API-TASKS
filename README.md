@@ -101,7 +101,7 @@ GET /api/companies
 
 ### 2. Vista de listado de compañías con tareas
 
-![Listado de compañías](screenshots/listar-companies.png)
+![Listado de compañías](screenshots/listar-companies-get.png)
 
 ## Cómo correr el proyecto
 
